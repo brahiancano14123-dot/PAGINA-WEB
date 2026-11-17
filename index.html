@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEMU 2.0 // Next-Gen Gear & Techwear</title>
+  <!-- Tipografías modernas y monoespaciadas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fondo ambiental con resplandores sutiles -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- HEADER CON NAVEGACIÓN FIJA -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <span class="brand-icon">◈</span>
+        <span class="brand-text">TEMU <span class="badge-20">2.0</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero">Inicio</a>
+        <a href="#features">Tecnología</a>
+        <a href="#catalog">Catálogo</a>
+        <a href="#drop-tracker">Drop Live</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-box">
+          <span class="mono-prefix">&gt;_</span>
+          <input type="text" id="search-input" placeholder="Buscar gear, tejidos..." autocomplete="off" />
+        </div>
+
+        <button class="cart-btn" id="cart-trigger" aria-label="Abrir carrito">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECCIÓN HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span class="mono">SYS.STATUS: ENVÍOS GLOBALES EN 48H // v2.0.4</span>
+          </div>
+          <h1>Equipamiento del futuro a <span class="gradient-text">precio directo de fábrica.</span></h1>
+          <p class="hero-subtitle">
+            Ropa termo-adaptativa, gadgets modulares y herramientas de utilidad extrema diseñados para optimizar tu día a día sin intermediarios.
+          </p>
+          <div class="hero-cta">
+            <a href="#catalog" class="btn btn-primary">Explorar Catálogo</a>
+            <a href="#features" class="btn btn-glass">Ver Arquitectura</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <span class="metric-val mono" data-target="14800">0</span>
+              <span class="metric-label">Unidades Enviadas Hoy</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val mono">-68%</span>
+              <span class="metric-label">Costo vs Retail Tradicional</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val mono">4.9/5</span>
+              <span class="metric-label">Índice de Innovación</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel Visual / Dashboard de Producto Destacado -->
+        <div class="hero-visual reveal">
+          <div class="glass-card showcase-card">
+            <div class="card-top-bar">
+              <span class="mono text-cyan">ID: #T20-AERO-JKT</span>
+              <span class="tag-terminal">EN STOCK</span>
+            </div>
+            <div class="showcase-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=80" alt="Chaqueta Techwear Grafeno" />
+              <div class="scanline"></div>
+              <div class="hud-overlay">
+                <span>TEMP: -15°C / +30°C</span>
+                <span>IMPERMEABILIDAD: 20K MM</span>
+              </div>
+            </div>
+            <div class="showcase-info">
+              <div>
+                <h3>Chaqueta Modular Aero-Shell</h3>
+                <p>Fibra de grafeno calefactable por USB-C con 12 bolsillos ocultos.</p>
+              </div>
+              <div class="showcase-price">
+                <span class="old-price">$189.00</span>
+                <span class="current-price mono">$49.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARJETAS DE CARACTERÍSTICAS / SERVICIOS -->
+    <section class="features section-padding" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="mono text-cyan">// INFRAESTRUCTURA TEMU 2.0</span>
+          <h2>Ingeniería aplicada al consumo inteligente</h2>
+        </div>
+
+        <div class="features-grid">
+          <article class="glass-card feature-card reveal">
+            <div class="feature-icon">⚡</div>
+            <h3>Logística Cuántica Directa</h3>
+            <p>Conectamos laboratorios de diseño y fábricas automatizadas directamente con tu puerta, eliminando sobrecostos de marca.</p>
+            <span class="mono feature-meta">LATENCIA: 48-72 HRS</span>
+          </article>
+
+          <article class="glass-card feature-card reveal">
+            <div class="feature-icon">🛡️</div>
+            <h3>Materiales de Grado Aeroespacial</h3>
+            <p>Tejidos hidrofóbicos, titanio ultraligero y polímeros con memoria de forma sometidos a pruebas de estrés extremo.</p>
+            <span class="mono feature-meta">CERTIFICACIÓN: ISO-TECH</span>
+          </article>
+
+          <article class="glass-card feature-card reveal">
+            <div class="feature-icon">🔄</div>
+            <h3>Garantía de Reemplazo Instantáneo</h3>
+            <p>Si un gadget o prenda no supera tus expectativas funcionales, procesamos el reembolso o cambio en menos de 60 segundos.</p>
+            <span class="mono feature-meta">PROTECCIÓN: 100%</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO INTERACTIVO CON FILTROS DINÁMICOS -->
+    <section class="catalog section-padding" id="catalog">
+      <div class="container">
+        <div class="catalog-header reveal">
+          <div>
+            <span class="mono text-cyan">// INVENTARIO ACTIVO</span>
+            <h2>Hardware & Techwear Innovador</h2>
+          </div>
+
+          <!-- Filtros de categoría -->
+          <div class="filter-bar" id="filter-bar">
+            <button class="filter-btn active" data-category="all">Todos</button>
+            <button class="filter-btn" data-category="techwear">Ropa Techwear</button>
+            <button class="filter-btn" data-category="gadgets">Gadgets EDC</button>
+            <button class="filter-btn" data-category="home">Hogar Smart</button>
+          </div>
+        </div>
+
+        <!-- Grid inyectado dinámicamente desde script.js -->
+        <div class="products-grid" id="products-grid"></div>
+      </div>
+    </section>
+
+    <!-- PANEL INTERACTIVO: TERMINAL DE DROPS & TELEMETRÍA EN VIVO -->
+    <section class="drop-section section-padding" id="drop-tracker">
+      <div class="container">
+        <div class="glass-card terminal-panel reveal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="mono">TEMU_2.0_LIVE_FEED // FLASH DROPS & TELEMETRÍA</span>
+            <span class="mono text-green">● EN LÍNEA</span>
+          </div>
+
+          <div class="terminal-body">
+            <div class="flash-deal">
+              <span class="badge-flash mono">FLASH DROP ACTIVO</span>
+              <h3>Mochila Antirrobo Solar + Panel OLED</h3>
+              <p>Carga tu laptop a 65W mientras caminas. Stock limitado a precio de costo.</p>
+              <div class="countdown-box mono" id="countdown">
+                <div class="time-unit"><span id="hours">02</span><small>HRS</small></div>
+                <span>:</span>
+                <div class="time-unit"><span id="minutes">45</span><small>MIN</small></div>
+                <span>:</span>
+                <div class="time-unit"><span id="seconds">19</span><small>SEG</small></div>
+              </div>
+              <button class="btn btn-primary" id="claim-drop-btn">Reclamar Oferta ($34.90)</button>
+            </div>
+
+            <div class="live-logs">
+              <h4 class="mono text-cyan">&gt; Actividad de Red en Tiempo Real</h4>
+              <ul class="log-list mono" id="live-log-list">
+                <!-- Logs generados en tiempo real por JS -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="brand">
+          <span class="brand-icon">◈</span>
+          <span class="brand-text">TEMU <span class="badge-20">2.0</span></span>
+        </a>
+        <p class="footer-desc">
+          Redefiniendo el comercio global mediante diseño utilitario, tecnología accesible y estética funcional.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="mono">SECTORES</h4>
+        <ul>
+          <li><a href="#catalog">Techwear Modular</a></li>
+          <li><a href="#catalog">Herramientas EDC</a></li>
+          <li><a href="#catalog">Ecosistema Hogar</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="mono">PROTOCOLOS</h4>
+        <ul>
+          <li><a href="#features">Rastreo Satelital</a></li>
+          <li><a href="#features">Devoluciones Zero-Friction</a></li>
+          <li><a href="#drop-tracker">Acceso Anticipado VIP</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="mono">ALERTAS DE DROP</h4>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="usuario@dominio.com" required />
+          <button type="submit" class="btn btn-primary">OK</button>
+        </form>
+        <p class="form-feedback mono" id="newsletter-feedback"></p>
+      </div>
+    </div>
+    <div class="container footer-bottom mono">
+      <span>© 2026 TEMU 2.0 SYSTEMS. TODOS LOS DERECHOS RESERVADOS.</span>
+      <span>BUILD: v2.0.4-STABLE</span>
+    </div>
+  </footer>
+
+  <!-- MODAL DE VISTA RÁPIDA DE PRODUCTO -->
+  <div class="modal-backdrop" id="product-modal">
+    <div class="glass-card modal-content">
+      <button class="close-modal" id="close-product-modal">&times;</button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Contenido dinámico -->
+      </div>
+    </div>
+  </div>
+
+  <!-- DRAWER LATERAL DEL CARRITO -->
+  <div class="drawer-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <h3 class="mono">CARRITO // UNIDADES</h3>
+      <button class="close-modal" id="close-cart">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <!-- Items dinámicos -->
+    </div>
+
+    <div class="drawer-footer">
+      <div class="cart-summary">
+        <span>Total Estimado:</span>
+        <span class="mono text-cyan total-price" id="cart-total">$0.00</span>
+      </div>
+      <button class="btn btn-primary full-width" id="checkout-btn">Ejecutar Compra Rápida</button>
+    </div>
+  </aside>
+
+  <!-- NOTIFICACIÓN TOAST -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
